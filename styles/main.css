@@ -1,0 +1,28 @@
+header {
+  background-image: url(../images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 540px;
+  padding-top: 32px;
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 98px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.menu-wrap {
+  background-color: var(--white);
+  position: absolute;
+}
