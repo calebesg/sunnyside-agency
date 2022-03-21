@@ -2,27 +2,35 @@ header {
   background-image: url(../images/mobile/image-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
-  height: 540px;
-  padding-top: 32px;
-}
+  background-position:bottom;
+  padding: 32px 22px 0;
 
-h1 {
-  font-family: 'Fraunces', serif;
-  color: var(--white);
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
 
+.hamburger {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  opacity: .8;
+  transition: opacity .3s;
+}
 
+.hamburger:hover {
+  opacity: 1;
+}
 
 .menu-wrap {
   position: absolute;
@@ -74,3 +82,22 @@ h1 {
   color: var(--dark-desaturated-cyan);
   text-transform: uppercase;
 }
+
+h1 {
+  font-family: 'Fraunces', serif;
+  color: var(--white);
+  letter-spacing: 8px;
+  font-size: 42px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 96px;
+}
+
+.arrow-down {
+  margin: 0 auto;
+  margin-top: 56px;
+  margin-bottom: 140px;
+}
+
+/* Main */
