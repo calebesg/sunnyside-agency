@@ -84,7 +84,6 @@ header {
 }
 
 h1 {
-  font-family: 'Fraunces', serif;
   color: var(--white);
   letter-spacing: 8px;
   font-size: 42px;
@@ -100,4 +99,92 @@ h1 {
   margin-bottom: 140px;
 }
 
-/* Main */
+/* ABOUT */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr auto 600px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 62px 22px;
+}
+
+article .sub-title {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+article .description {
+  color: var(--dark-grayish-blue);
+  margin-top: 2rem;
+}
+
+article .btn-more {
+  position: relative;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  color: var(--very-dark-desaturated-blue);
+}
+
+article .btn-more::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  z-index: -1;
+  opacity: .4;
+  transition: opacity 0.3s;
+}
+
+article .btn-more.red::after {
+  background-color: var(--soft-red);
+}
+
+article .btn-more.yellow::after {
+  background-color: var(--yellow);
+}
+
+article .btn-more:hover::after {
+  opacity: 1;
+}
+
+/* IMAGES AND FIGURES */
+.image-transform {
+  background: url(../images/mobile/image-transform.jpg) center center no-repeat;
+}
+
+.image-stand-out {
+  background: url(../images/mobile/image-stand-out.jpg) center center no-repeat;
+}
+
+.image-transform,
+.image-stand-out {
+  background-size: cover;
+  min-height: 312px;
+}
+
+.image-graphic-design {
+  background: url(../images/mobile/image-graphic-design.jpg) center center no-repeat;
+}
+
+.image-photograph {
+  background: url(../images/mobile/image-photography.jpg) center center no-repeat;
+}
+
+.image-graphic-design,
+.image-photograph {
+  height: 100%;
+  background-position: top;
+  background-size: contain;
+}

@@ -34,6 +34,12 @@ button {
   font-family: 'Barlow', sans-serif;
 }
 
+h1,
+h2,
+.btn-more {
+  font-family: 'Fraunces', serif;
+}
+
 ul {
   list-style: none;
 }
