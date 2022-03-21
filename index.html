@@ -23,9 +23,11 @@
         <img src="./images/logo.svg" alt="Sunnyside">
       </a>
 
-      <button>Menu</button>
+      <button class="open" aria-label="open menu" onclick="Menu.toggleVisibility()">
+        <img src="./images/icon-hamburger.svg" alt="" aria-hidden>
+      </button>
 
-      <!-- <nav class="menu-wrap">
+      <nav class="menu-wrap open">
         <ul class="menu">
           <li class="menu-item">
             <a href="#">About</a>
@@ -37,10 +39,10 @@
             <a href="#">Projects</a>
           </li>
           <li class="menu-item">
-            <a href="#">Contact</a>
+            <a href="#" class="active">Contact</a>
           </li>
         </ul>
-      </nav> -->
+      </nav>
     </div>
 
     <h1>We are creatives</h1>
@@ -88,6 +90,8 @@
   Services
   Projects
   Contact
+
+  <script src="./main.js"></script>
 </body>
 
 </html>
