@@ -138,10 +138,11 @@ article .btn-more::after {
   content: '';
   position: absolute;
   bottom: -2px;
-  left: 0;
+  left: 50%;
   height: 10px;
-  width: 100%;
+  width: 130px;
   border-radius: 5px;
+  transform: translate(-50%);
   z-index: -1;
   opacity: .4;
   transition: opacity 0.3s;
@@ -186,5 +187,33 @@ article .btn-more:hover::after {
 .image-photograph {
   height: 100%;
   background-position: top;
-  background-size: contain;
+  background-size: cover;
+}
+
+/* Examples */
+
+.example-list .item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px;
+  text-align: center;
+}
+
+.example-list .item-list:first-of-type {
+  color: var(--dark-desaturated-cyan);
+}
+
+.example-list .item-list:last-of-type {
+  color: var(--dark-blue);
+}
+
+.item-list h3 {
+  margin-top: auto;
+  font-size: 2rem;
+}
+
+.item-list p {
+  margin: 36px 0 40px;
+  line-height: 1.8rem;
 }
