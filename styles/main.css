@@ -266,3 +266,36 @@ article .btn-more:hover::after {
 .person figcaption small {
   color: var(--grayish-blue);
 }
+
+/* Photo Gallery */
+.gallery ul {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* Images */
+.image-milkbottles {
+  background: url(../images/mobile/image-gallery-milkbottles.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.image-orange {
+  background: url(../images/mobile/image-gallery-orange.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.image-cone {
+  background: url(../images/mobile/image-gallery-cone.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.image-sugar {
+  background: url(../images/mobile/image-gallery-sugar-cubes.jpg) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
