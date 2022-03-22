@@ -104,7 +104,7 @@ h1 {
 .about {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr auto 1fr auto 600px;
+  grid-template-rows: 1fr auto 1fr auto 1200px;
 }
 
 article {
@@ -191,6 +191,10 @@ article .btn-more:hover::after {
 }
 
 /* Examples */
+.example-list {
+  display: flex;
+  flex-direction: column;
+}
 
 .example-list .item-list {
   display: flex;
@@ -216,4 +220,49 @@ article .btn-more:hover::after {
 .item-list p {
   margin: 36px 0 40px;
   line-height: 1.8rem;
+}
+
+/* Clients Testimonials */
+.testimonial {
+  padding: 68px 22px;
+  text-align: center;
+}
+
+.testimonial h2 {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 0.325rem;
+  color: var(--grayish-blue);
+}
+
+.person {
+  margin-top: 68px;
+}
+
+.person figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person figure img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.person figcaption p {
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.8rem;
+  margin: 40px 0;
+}
+
+.person figcaption strong {
+  color: var(--very-dark-desaturated-blue);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.person figcaption small {
+  color: var(--grayish-blue);
 }
