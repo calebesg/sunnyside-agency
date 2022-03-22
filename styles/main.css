@@ -269,10 +269,9 @@ article .btn-more:hover::after {
 
 /* Photo Gallery */
 .gallery ul {
-  height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 25vh 25vh;
 }
 
 /* Images */
@@ -298,4 +297,56 @@ article .btn-more:hover::after {
   background: url(../images/mobile/image-gallery-sugar-cubes.jpg) no-repeat;
   background-size: cover;
   background-position: bottom;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-moderate-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  padding: 38px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav .logo {
+  width: 170px;
+}
+
+nav ul {
+  margin-top: 46px;
+  display: flex;
+  align-items: center;
+  gap: 58px;
+}
+
+nav a {
+  color: rgb(69, 140, 126);
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+.social {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.social .icon {
+  transition: filter .3s;
+}
+
+.social a:hover .icon {
+  filter: brightness(1%) invert();
 }
