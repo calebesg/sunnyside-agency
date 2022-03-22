@@ -310,29 +310,29 @@ footer {
   padding: 38px;
 }
 
-nav {
+footer nav {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-nav .logo {
+footer nav .logo {
   width: 170px;
 }
 
-nav ul {
+footer nav ul {
   margin-top: 46px;
   display: flex;
   align-items: center;
   gap: 58px;
 }
 
-nav a {
+footer nav a {
   color: rgb(69, 140, 126);
   transition: color 0.3s;
 }
 
-nav a:hover {
+footer nav a:hover {
   color: var(--white);
 }
 
