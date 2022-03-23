@@ -255,7 +255,7 @@ article .btn-more:hover::after {
 .person figcaption p {
   color: var(--very-dark-grayish-blue);
   line-height: 1.8rem;
-  margin: 40px 0;
+  margin-top: 40px;
 }
 
 .person figcaption strong {
@@ -482,5 +482,58 @@ footer nav a:hover {
 
   .item-list p {
     max-width: 370px;
+  }
+
+  .testimonial {
+    padding: 160px 0;
+  }
+
+  .testimonial .peoples {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 46px
+  }
+
+  .peoples .person {
+    max-width: 340px;
+  }
+
+  .person figcaption p {
+    margin-top: 64px;
+    line-height: 2rem;
+  }
+
+  figcaption strong {
+    margin-top: 80px;
+  }
+
+  .gallery ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 55vh;
+  }
+
+  .image-milkbottles {
+    background: url(../images/desktop/image-gallery-milkbottles.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+  
+  .image-orange {
+    background: url(../images/desktop/image-gallery-orange.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+  
+  .image-cone {
+    background: url(../images/desktop/image-gallery-cone.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+  
+  .image-sugar {
+    background: url(../images/desktop/image-gallery-sugar-cubes.jpg) no-repeat;
+    background-position: bottom;
+    background-size: cover;
   }
 }
