@@ -197,6 +197,7 @@ article .btn-more:hover::after {
 }
 
 .example-list .item-list {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -398,5 +399,88 @@ footer nav a:hover {
   .arrow-down {
     margin-bottom: 0;
     margin-top: 100px;
+  }
+
+  .about {
+    grid-template-areas: "a b" "c d" "e e";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 75vh);
+  }
+  
+  img.image-transform {
+    grid-area: b;
+  }
+
+  .transform-content {
+    grid-area: a;
+  }
+
+  .image-stand-out {
+    grid-area: c;
+  }
+
+  .stand-content {
+    grid-area: d;
+  }
+
+  .content-wrapper.transform-content {
+    justify-content: flex-end;
+    margin-right: 15%;
+  }
+
+  .content-wrapper.stand-content {
+    justify-content: flex-start;
+    margin-left: 15%;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  article {
+    text-align: left;
+    align-items: flex-start;
+    padding: 0;
+    max-width: 448px;
+    width: 100%;
+  }
+
+  article .sub-title {
+    font-size: 2.6rem;
+    padding: 0;
+  }
+
+  article .description {
+    line-height: 2rem;
+  }
+
+  .example-list {
+    grid-area: e;
+    flex-direction: row;
+  }
+
+  .image-transform {
+    background: url(../images/desktop/image-transform.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  
+  .image-stand-out {
+    background: url(../images/desktop/image-stand-out.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  
+  .image-graphic-design {
+    background: url(../images/desktop/image-graphic-design.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  
+  .image-photograph {
+    background: url(../images/desktop/image-photography.jpg) center center no-repeat;
+    background-size: cover;
+  }
+
+  .item-list p {
+    max-width: 370px;
   }
 }
