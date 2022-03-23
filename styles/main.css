@@ -325,10 +325,11 @@ footer nav ul {
   margin-top: 46px;
   display: flex;
   align-items: center;
-  gap: 58px;
+  gap: 62px;
 }
 
 footer nav a {
+  font-size: 1.5rem;
   color: rgb(69, 140, 126);
   transition: color 0.3s;
 }
@@ -345,11 +346,13 @@ footer nav a:hover {
 }
 
 .social .icon {
-  transition: filter .3s;
+  font-size: 1.8rem;
+  color: rgb(69, 140, 126);
+  transition: color .3s;
 }
 
-.social a:hover .icon {
-  filter: brightness(1%) invert();
+.social .icon:hover {
+  color: var(--white);
 }
 
 @media (min-width: 800px) {
