@@ -32,7 +32,7 @@ header {
   opacity: 1;
 }
 
-.menu-wrap {
+#menu-wrap {
   position: absolute;
   top: -1000px;
   width: 100%;
@@ -41,12 +41,12 @@ header {
   transition: all .6s cubic-bezier(0.4, 0.6, 0.4, 1.2);
 }
 
-.menu-wrap.open { 
+#menu-wrap.open { 
   top: 80px;
   opacity: 1;
 }
 
-.menu-wrap::before {
+#menu-wrap::before {
   content: '';
   position: absolute;
   right: 0;
@@ -365,14 +365,14 @@ footer nav a:hover {
     display: none;
   }
 
-  .menu-wrap {
+  #menu-wrap {
     position: unset;
     width: fit-content;
     opacity: 1;
     background-color: transparent;
   }
 
-  .menu-wrap::before {
+  #menu-wrap::before {
     position: unset;
   }
 

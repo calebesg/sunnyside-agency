@@ -1,5 +1,5 @@
 const Menu = {
-  element: document.querySelector('nav.menu-wrap'),
+  element: document.getElementById('menu-wrap'),
 
   toggleVisibility() {
     Menu.element.classList.toggle('open');
